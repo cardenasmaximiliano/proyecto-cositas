@@ -106,4 +106,22 @@ header div:nth-child(2) {
   order: 1;
 }
 
+.cards-container {
+  width: 110px;
+  height: 150px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.cards-container img {
+  width: 100px;
+}
+.cards-container h3 {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
