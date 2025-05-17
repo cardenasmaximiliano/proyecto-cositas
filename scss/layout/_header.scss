@@ -1,0 +1,42 @@
+header{
+    width: 100%;
+    height: auto;
+    background-color: map-get($color-back, fondo4 );
+
+    div{
+        &:nth-child(1){
+             padding: .5rem 0px;
+        p{
+            text-align: center;
+            background-color: map-get($color-back, fondo1 )
+        }
+         }
+        &:nth-child(2){
+            width: 75%;
+            margin: auto;
+            @include flex(row, wrap, space-between,center,.625rem)
+        }
+       
+    }
+}
+
+.navbar{
+    width: 75%;
+    margin: auto;
+    border-radius: .625rem;
+    @include flex (row, wrap, space-between, center, .625rem);
+    padding: 10px .625rem;
+    background-color: map-get($color-back ,fondo3 );
+    div{
+        &:nth-child(1){
+           img{
+            width: 6.25rem;
+           }
+        }
+    }
+    ul{
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+    }
+}

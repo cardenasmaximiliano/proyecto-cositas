@@ -1,0 +1,109 @@
+/**
+pasos sass
+
+1- npm init
+2- npm install -g sass
+
+3- sass --watch ./rutaScss ./rutaCss
+primero va la ruta scss despues ruta css
+*/
+/*
+base
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px 1rem;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*layout*/
+header {
+  width: 100%;
+  height: auto;
+  background-color: #f8f3ef;
+}
+header div:nth-child(1) {
+  padding: 0.5rem 0px;
+}
+header div:nth-child(1) p {
+  text-align: center;
+  background-color: #fde1d6;
+}
+header div:nth-child(2) {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.navbar {
+  width: 75%;
+  margin: auto;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 10px 0.625rem;
+  background-color: #ffffff;
+}
+.navbar div:nth-child(1) img {
+  width: 6.25rem;
+}
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+/*componentes*/
+.section-principal-index {
+  display: grid;
+  width: 75%;
+  height: 31.25rem;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  margin: auto;
+}
+.section-principal-index div {
+  grid-column: 3/5;
+  grid-row: 3/6;
+  order: 2;
+}
+.section-principal-index div p, .section-principal-index div h1 {
+  background-color: rgba(211, 211, 211, 0.502);
+}
+.section-principal-index div button {
+  all: unset;
+  padding: 5px 15px;
+  margin-top: 1.25rem;
+  background-color: lightcyan;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.523);
+}
+.section-principal-index img {
+  width: 100%;
+  grid-column: 3/7;
+  grid-row: 2/6;
+  order: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+/**
+pasos sass
+
+1- npm init
+2- npm install -g sass
+
+3- sass --watch ./rutaScss ./rutaCss
+primero va la ruta scss despues ruta css
+*/
+
+@import "./utilities/maps";
+@import  "./utilities/mixins";
+
+/*
+base
+*/
+
+@import "./base/generales";
+
+
+/*layout*/
+@import "./layout/header";
+
+/*componentes*/
+
+@import "./components/section-principal-index";
