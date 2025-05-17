@@ -25,3 +25,12 @@ base
 
 @import "./components/section-principal-index";
 @import "./components/cards";
+
+/*
+si hacen desktop first decreciente
+mobilefirst creciente
+
+
+**/
+
+@import "./layout/media/768/media768";

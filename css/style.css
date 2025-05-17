@@ -124,4 +124,16 @@ header div:nth-child(2) {
   text-align: center;
 }
 
+/*
+si hacen desktop first decreciente
+mobilefirst creciente
+
+
+**/
+@media (max-width: 768px) {
+  header {
+    background-color: blue;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
